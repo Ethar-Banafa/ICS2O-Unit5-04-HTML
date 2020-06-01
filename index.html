@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">.
+    <meta name="description" content="My first webpage, with image">
+    <meta name="keywords" content="a website">
+    <meta name="author" content="Ethar Banafa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>A webpage</title>
+    </head>
+    <body>
+        <h1>Are you allowed in the museum?</h1>
+        <p>Type you age to know if you are allowed to the museum and at what price.<br> <br> Note: the price will depened on the day and if you are a student or not.</p>
+         <p id="demo"></p>
+         <p id="ss"></p>
+      Type you age:  <input type="text" onclick="myFunction()">
+<button id="btn" onclick="myFuction()">Click me</button>
+        <script>
+        function myFunction() {
+             if ((day=="Tuesday" || day=="Thursday") || age>12 && age<21)) {
+                 document.getElementById("demo").innerHTML = "You are eligible to student discount";
+            } 
+            else {
+               document.getElementById("ss").innerHTML =("You must pay regular price");
+            }
+        }
+        </script>
+      
+    </body>
+</html>
