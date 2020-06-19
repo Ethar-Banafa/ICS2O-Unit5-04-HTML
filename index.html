@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">.
     <meta name="description" content="My first webpage, with image">
     <meta name="keywords" content="a website">
@@ -9,28 +9,12 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <title>A webpage</title>
-    </head>
-    <body>
-        <h1>Are you allowed in the museum?</h1>
-        <p>Type you age to know if you are allowed to the museum and at what price.<br> <br> Note: the price will depened on the day and if you are a student or not.</p>
-      Type your age:  <input type="number" id="demo">
-      Type which day it is of the week: <input type="text" id="ww">
-<button id="btn" onclick="myFunction()">Click me</button>
-        <script>
-        function myFunction() {
-             let day= "Friday";
-            let age= 25; 
-            age = document.getElementById("demo").value;
-            day= document.getElementById("ww").value;
-            age = +age;
-             if ((day=="Tuesday"|| day=="Thursday") || (age>12 && age<21)) {
-                 alert("You are eligible to student discount");
-            }
-            else ((day="Monday"||day="Wednesday"||day="Friday"||day"Saturday"||day="Sunday")||(age<=12 && age=>21)){
-               alert("You must pay regular price");
-            }
-        }
-        </script>
-      
-    </body>
+  </head>
+  <body>
+    <h1>Are you allowed in the museum?</h1>
+    <p>Type you age to know if you are allowed to the museum and at what price.<br> <br> Note: the price will depend on the day and if you are a student or not.</p>
+    Type your age:  <input type="number" id="demo">
+    Type which day it is of the week: <input type="text" id="ww">
+    <button id="btn" onclick="myFunction()">Click me</button>
+  </body>
 </html>
